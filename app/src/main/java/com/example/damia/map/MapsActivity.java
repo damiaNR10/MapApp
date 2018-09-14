@@ -40,21 +40,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Button buttonChangeColor;
     boolean success;
     boolean clicked = false;
-    private LocationManager locationManager;
-    private Location location;
-    public Provider provider;
-    LocationProvider locationProvider;
     public LatLng newe;
-    public String test;
     private FusedLocationProviderClient mFusedLocationClient;
-    Task task;
-
-    // The minimum distance to change Updates in meters
-    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 1; // 10 meters
-
-    // The minimum time between updates in milliseconds
-    private static final long MIN_TIME_BW_UPDATES = 1; // 1 minute
-    //private FusedLocationProviderClient mFusedLocationClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
